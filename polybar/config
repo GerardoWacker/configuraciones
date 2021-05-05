@@ -1,1 +1,156 @@
-/home/gerar/source/rcs/config
+[colors]
+background = #181a24
+background-alt = #2d3347
+foreground = #2d3347
+color8 = #2d3347
+
+[bar/bar]
+
+override-redirect = false 
+wm-restack = bspwm
+bottom = false
+background = ${colors.background}
+foreground = ${colors.foreground}
+fixed-center = true
+width = 100%
+height = 26
+radius = 0.0
+line-size = 0
+line-color = #f00
+offset-y = 0
+offset-x = 0
+
+font-0 = UbuntuMono Nerd Font:pixelsize=12;3
+
+modules-left = rofi bspwm
+modules-center = ""
+modules-right = ncspot choco alsa battery network time
+
+[module/rofi]
+type = custom/text
+content = ""
+click-left = rofi -show drun -location 1 -xoffset 39 -yoffset 73
+click-right = rofi -show window -location 1 -xoffset 39 -yoffset 73
+enable-click = true
+content-foreground = #1793d1
+content-padding = 2
+
+[module/bspwm]
+type = internal/bspwm
+index-sort = true
+enable-click = true
+format = <label-state>
+foramt-prefix-padding = 2
+pin-workspaces = true
+
+label-empty-foreground = #cccccc
+label-focused-foreground = #ffffff
+label-focused-background = ${colors.background-alt} 
+label-focused = %name%
+label-focused-padding = 2
+label-occupied = %name%
+label-occupied-padding = 2
+label-occupied-foreground = #cccccc
+label-empty = %name%
+label-empty-padding = 2
+
+[settings]
+label-focused-underline = #1793d1
+throttle-output = 5
+throttle-output-for = 10
+throttle-input-for = 30
+screenchange-reload = true
+pseudo-transparency = false
+
+[module/choco]
+type = custom/script
+exec = "git -C ~/Documentos/git/web-frontend log -1 --format='%B (%an)'"
+format-foreground = #ffffff
+format-padding = 1
+format-prefix = " "
+format-prefix-padding = 1
+format-prefix-foreground = #bbbbbb
+tail = false
+interval = 3
+
+[module/bright]
+type = custom/script
+exec = "cat /sys/class/backlight/intel_backlight/brightness"
+format-foreground = #ffffff
+format-padding = 1
+format-prefix = "Br /"
+format-prefix-padding = 1
+format-prefix-foreground = "#bbbbbb"
+tail = false
+interval = 3
+
+[module/ncspot]
+type = custom/script
+exec = playerctl -p ncspot metadata --format '{{artist}} - {{title}}'
+exec-if = "pgrep ncspot"
+format-foreground =  #ffffff
+format-padding = 1
+format-prefix = MUSIC:
+format-prefix-padding = 1
+format-prefix-foreground = #bbbbbb
+tail = false
+interval = 3
+
+[module/time]
+type = internal/date
+time = %H:%M
+format = <label>
+format-prefix = ""
+format-prefix-padding = 1
+format-foreground = #bbbbbb
+format-padding = 2
+label = %time%
+label-foreground = #ffffff
+
+[module/battery]
+type = internal/battery
+battery = BAT1
+adapter = AC
+full-at = 98%
+
+format-charging =   <label-charging>
+format-discharging =  <label-discharging>
+format-full =  <label-full>
+label-charging = %percentage%%
+label-discharging = %percentage%%
+
+label-charging-foreground = #ffffff
+label-discharging-foreground = #ffffff
+label-full-foreground = #ffffff
+
+format-charging-foreground = #bbbbbb
+format-discharging-foreground = #bbbbbb
+format-full-foreground = #bbbbbb
+
+format-charging-padding = 2
+format-discharging-padding = 2
+format-full-padding = 2
+
+[module/network]
+type = internal/network
+interface = wlp4s0
+interval = 3.0
+unknown-as-up = true
+accumulate-stats = true
+format-connected =   <label-connected>
+label-connected = %essid%
+format-connected-padding = 2
+format-connected-foreground = #bbbbbb
+label-connected-foreground = #ffffff
+
+[module/alsa]
+type = internal/alsa
+
+format-volume =   <label-volume>
+label-muted = 
+label-muted-padding = 2
+label-muted-foreground = #cccccc
+label-volume-foreground = #ffffff
+format-volume-foreground = #bbbbbb
+format-volume-padding = 2
+
