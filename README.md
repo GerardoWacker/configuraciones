@@ -9,6 +9,8 @@ Boludeces que guardo de mi instalación de Arch por si llego a necesitar, en cas
 - Cosas del polybar, desde modulos propios, hasta algunos robados.
 - Configuración del nvim (robado de un video de YT que no encuentro).
 - Configuración de alacritty (Simple, solo setea font y background opacity).
+- Configuración de Picom (un poco cambiado del default).
+- Configuración de Neofetch (agregar unos valores, sacar otros).
 
 ## Yo teniendo que hacer un backup de las boludeces que tengo en Arch:
 <img src="/cry in la concha de la lora.png" />
