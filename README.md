@@ -1,5 +1,5 @@
 # GerardoWacker/configuraciones
-Boludeces que guardo de mi instalación de Arch por si llego a necesitar, en caso de que algo le pase. Prácticamente un backup público.
+Boludeces que guardo de mi instalación de Arch por si llego a necesitar en un posible futuro, en caso de que algo le pase. Prácticamente un backup público.
 
 **NOTA:** No tomar como modelo. Muchas de las cosas presentes acá son experimentales.
 
