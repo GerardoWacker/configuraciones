@@ -22,9 +22,9 @@ offset-x = 0
 
 font-0 = UbuntuMono Nerd Font:pixelsize=12;3
 
-modules-left = rofi bspwm
+modules-left = bspwm
 modules-center = ""
-modules-right = ncspot choco alsa battery network time
+modules-right = music git alsa battery network time
 
 [module/rofi]
 type = custom/text
@@ -62,7 +62,7 @@ throttle-input-for = 30
 screenchange-reload = true
 pseudo-transparency = false
 
-[module/choco]
+[module/git]
 type = custom/script
 exec = "git -C ~/Documentos/git/web-frontend log -1 --format='%B (%an)'"
 format-foreground = #ffffff
@@ -84,17 +84,32 @@ format-prefix-foreground = "#bbbbbb"
 tail = false
 interval = 3
 
-[module/ncspot]
+[module/music]
 type = custom/script
-exec = playerctl -p ncspot metadata --format '{{artist}} - {{title}}'
-exec-if = "pgrep ncspot"
-format-foreground =  #ffffff
+exec = playerctl metadata xesam:title
+exec-if = "pgrep -x spotify"
+format-prefix = " "
+format-foreground = #ffffff
 format-padding = 1
-format-prefix = MUSIC:
 format-prefix-padding = 1
 format-prefix-foreground = #bbbbbb
 tail = false
-interval = 3
+interval = 0
+click-left = playerctl play-pause
+
+[module/play-pause]
+type = custom/script
+label = %output%
+interval = 0
+; format_background = #268bd2
+format-foreground = #cccccc
+format-prefix-foreground = #5b
+exec = echo $([ $(playerctl --player=spotify status) == "Playing" ] && echo "" || echo "")
+exec-if = pgrep -x spotify
+tail = true
+format-padding = 2
+format-prefix-padding = 4
+click-left = playerctl play-pause
 
 [module/time]
 type = internal/date
