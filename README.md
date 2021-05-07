@@ -1,5 +1,7 @@
 # GerardoWacker/configuraciones
-Boludeces que guardo en un repositorio por si la llego a cagar
+Boludeces que guardo de mi instalación de Arch por si llego a necesitar, en caso de que algo le pase. Prácticamente un backup público.
+
+**NOTA:** No tomar como modelo. Muchas de las cosas presentes acá son experimentales.
 
 ## ¿Qué tiene?
 - Configuraciones de bspwm, como escritorios y esas cosas.
