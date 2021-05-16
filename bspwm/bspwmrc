@@ -3,30 +3,32 @@
 # ] ---- AUTOSTART ---- [
 
 sxhkd &
-feh --bg-fill ~/Imágenes/Lain.jpg &
+feh --bg-fill ~/Imágenes/Wall.png &
 flameshot &
 picom -b &
 nm-applet &
-sh ~/.config/polybar/launch.sh &
-premid
+screenkey &
+sh ~/.config/polybar/launch.sh
 
 # ] ---- WORKSPACES ---- [ 
 
-bspc monitor -d "~" código navegador facultad chats música
+bspc monitor -d "~" cód nav facu chat mús
 
 # ] ---- WINDOW CONFIG ---- [
 
-bspc config border_width         1
-bspc config window_gap         	10
+bspc config border_width         3
+bspc config window_gap         	13
 
 bspc config active_border_color "#6272a4"
 bspc config presel_feedback_color "#6272a4"
 bspc config normal_border_color "#44475a"
-bspc config focused_border_color "#8be9fd"
+bspc config focused_border_color "#636beb"
 
 bspc config split_ratio          0.50
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
+
+xsetroot -cursor_name left_ptr
 
 bspc rule -a qutebrowser desktop=^6 follow=on
 bspc rule -a emacs desktop=^3 follow=on
