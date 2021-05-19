@@ -15,7 +15,7 @@ Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'vimsence/vimsence'
 
-Plug 'morhetz/gruvbox'
+Plug 'dracula/vim', {'as': 'dracula'}
 
 Plug 'HerringtonDarkholme/yats.vim' " TS Syntax
 
@@ -30,8 +30,8 @@ vmap ++ <plug>NERDCommenterToggle
 nmap ++ <plug>NERDCommenterToggle
 
 " open NERDTree automatically
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * NERDTree
+"autocmd StdinReadPre * let s:std_in=1
+"autocmd VimEnter * NERDTree
 
 let g:NERDTreeGitStatusWithFlags = 1
 "let g:WebDevIconsUnicodeDecorateFolderNodes = 1
@@ -76,7 +76,9 @@ set shiftwidth=2
 " always uses spaces instead of tab characters
 set expandtab
 
-colorscheme gruvbox
+colorscheme dracula
+let g:dracula_colorterm = 0
+set termguicolors
 
 let g:vimsence_editing_details = "Editando {}"
 let g:vimsence_editing_state   = "Laburando en {}"
