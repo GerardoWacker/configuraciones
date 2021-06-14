@@ -11,12 +11,12 @@ sh ~/.config/polybar/launch.sh
 
 # ] ---- WORKSPACES ---- [ 
 
-bspc monitor -d "~" cód nav facu chat mús
+bspc monitor -d "~" 1 2 3 4 5
 
 # ] ---- WINDOW CONFIG ---- [
 
-bspc config border_width         1
-bspc config window_gap         	15
+bspc config border_width         2
+bspc config window_gap         	13
 
 bspc config normal_border_color "#44475a"
 bspc config active_border_color "#bd93f9"
