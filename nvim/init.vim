@@ -76,7 +76,7 @@ set shiftwidth=2
 " always uses spaces instead of tab characters
 set expandtab
 
-colorscheme dracula
+colorscheme atom-dark
 let g:dracula_colorterm = 0
 set termguicolors
 
