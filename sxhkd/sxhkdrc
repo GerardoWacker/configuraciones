@@ -39,8 +39,8 @@ super + g
 	bspc node -s biggest.window
 
 
-        amixer set Master toggle
-
+super + alt + {Left,Right}
+  polybar-msg cmd {show,hide}
 
 XF86AudioLowerVolume
         amixer set Master 10%-
