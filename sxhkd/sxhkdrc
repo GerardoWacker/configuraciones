@@ -39,7 +39,6 @@ super + g
 	bspc node -s biggest.window
 
 
-XF86AudioMute
         amixer set Master toggle
 
 
