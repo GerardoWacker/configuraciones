@@ -15,7 +15,7 @@ bspc monitor -d "~" 1 2 3 4 5
 
 # ] ---- WINDOW CONFIG ---- [
 
-bspc config border_width         2
+bspc config border_width         0
 bspc config window_gap         	13
 
 bspc config normal_border_color "#44475a"
