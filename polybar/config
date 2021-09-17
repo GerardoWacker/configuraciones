@@ -39,10 +39,23 @@ line-color = #f00
 offset-y = 13
 offset-x = 85.3%
 enable-ipc = true
-
 font-0 = UbuntuMono Nerd Font:style=Bold:pixelsize=12;3
-
 modules-right = network alsa battery time
+
+[bar/center]
+override-redirect = true
+wm-restack = bspwm
+background = ${colors.background}
+foreground = ${colors.foreground}
+fixed-center = true
+width = 68.3%
+height = 35
+line-size = 0
+line-color = #f00
+offset-y = 13
+offset-x = 16.3%
+modules-center = title 
+font-0 = UbuntuMono Nerd Font:style=Bold:pixelsize=12;3
 
 [bar/bar]
 override-redirect = false 
@@ -74,6 +87,11 @@ enable-click = true
 content-background = #CC544447
 content-foreground = #c6B78c
 content-padding = 2 
+
+[module/title]
+type = internal/xwindow
+label-empty = "No hay ventanas abiertas"
+format-foreground = #fff
 
 [module/bspwm]
 type = internal/bspwm
@@ -193,10 +211,11 @@ interval = 3.0
 unknown-as-up = true
 accumulate-stats = true
 format-connected = 直
-format-disconnected = 睊 
+format-disconnected = 睊
 label-connected = %essid%
 format-connected-padding = 2
 format-connected-foreground = #bbbbbb
+format-disconnected-foreground = #bbbbbb
 label-connected-foreground = #ffffff
 
 [module/alsa]
