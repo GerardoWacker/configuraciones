@@ -18,4 +18,4 @@ Boludeces que guardo de mi instalación de Arch por si llego a necesitarlas en u
 ## Fuentes:
 La base la saqué de internet, pero muchas cosas las terminé modificando.
 
-Tiene cosas basadas en [KiritoDv/moon-rcs](https://github.com/KiritoDv/moon-rcs) y [genzyy/bspwm-config](https://github.com/genzyy/bspwm-config).
+Tiene cosas basadas en [KiritoDv/moon-rcs](https://github.com/KiritoDv/moon-rcs) y [genzyy/bspwm-config](https://github.com/genzyy/bspwm-config). Rofi basado en [adi1090x/rofi](https://github.com/adi1090x/rofi), pero con el esquema de colores cambiado.
