@@ -8,6 +8,7 @@ feh --bg-fill ~/Imágenes/Wall.png &
 flameshot &
 picom -b &
 nm-applet &
+dunst &
 sh ~/.config/polybar/launch.sh
 
 # ] ---- WORKSPACES ---- [ 
