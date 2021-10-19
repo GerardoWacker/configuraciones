@@ -29,7 +29,3 @@ bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
 xsetroot -cursor_name left_ptr
-
-bspc rule -a qutebrowser desktop=^6 follow=on
-bspc rule -a emacs desktop=^3 follow=on
-bspc rule -a spotify desktop=^2 follow=on
