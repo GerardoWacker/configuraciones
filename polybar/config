@@ -1,7 +1,7 @@
 [colors]
 background = #CC111111
 background-alt = #CC4e69a6
-foreground = #2d3347
+foreground = #c8bbb5
 color8 = #2d3347
 
 [bar/left]
@@ -84,8 +84,8 @@ content = " "
 click-left = rofi -show drun -location 1 -xoffset 39 -yoffset 73
 click-right = rofi -show window -location 1 -xoffset 39 -yoffset 73
 enable-click = true
-content-background = #CC2f3078
-content-foreground = #aad4e5
+content-background = #CC7a4d46
+content-foreground = #c8bbb5
 content-padding = 2 
 
 [module/title]
@@ -102,8 +102,8 @@ format-prefix-padding = 2
 pin-workspaces = true
 
 label-empty-foreground = #cccccc
-label-focused-foreground = #d8e0f1
-label-focused-background = ${colors.background-alt} 
+label-focused-foreground = #c8bbb5
+label-focused-background = #a87668
 label-focused = %name%
 label-focused-padding = 2
 label-occupied = %name%
