@@ -3,6 +3,11 @@ Boludeces que guardo de mi instalación de Arch por si llego a necesitarlas en u
 
 **NOTA:** No tomar como modelo. Muchas de las cosas presentes acá son experimentales.
 
+## ¿Cómo se ve?
+Un ejemplo de como se ve.
+<img src="/como-se-ve-1.png" />
+<img src="/como-se-ve-2.png" />
+
 ## ¿Qué tiene?
 - Configuraciones de bspwm, como escritorios y esas cosas.
 - Configuraciones de sxhkd, como mis keybinds.
