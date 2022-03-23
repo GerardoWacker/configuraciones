@@ -12,6 +12,14 @@ Boludeces que guardo de mi instalación de Arch por si llego a necesitarlas en u
 - Configuración de Picom (un poco cambiado del default).
 - Configuración de Neofetch (agregar unos valores, sacar otros).
 
+### ¿Qué fondo de pantalla estoy usando?
+Para que todas las correspondientes configuraciones y gamas de colores tengan sentido, es más que necesario tener un fondo de pantalla que combine.
+
+**Actualmente estoy usando**: [Dunes 2 Midnight Foggy](https://www.deviantart.com/dpcdpc11/art/DUNES-2-Wallpaper-5120x2880px-656488303), por dpcdpc11.
+
+### **NO** viene incluido
+- Fondo de pantalla (temas de copyright)
+
 ## Yo teniendo que hacer un backup de las boludeces que tengo en Arch:
 <img src="/cry in la concha de la lora.png" />
 
