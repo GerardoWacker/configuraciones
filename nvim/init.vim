@@ -10,14 +10,16 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'airblade/vim-gitgutter'
 Plug 'ctrlpvim/ctrlp.vim' " fuzzy find files
 Plug 'scrooloose/nerdcommenter'
+Plug 'frazrepo/vim-rainbow'
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 " Plug 'andweeb/presence.nvim'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'vimsence/vimsence'
-
-Plug 'dracula/vim', {'as': 'dracula'}
+Plug 'itchyny/lightline.vim'
+Plug 'morhetz/gruvbox'
 
 Plug 'HerringtonDarkholme/yats.vim' " TS Syntax
+Plug 'itchyny/vim-gitbranch'
 
 " Initialize plugin system
 call plug#end()
@@ -49,6 +51,18 @@ let g:NERDTreeGitStatusWithFlags = 1
 
 
 let g:NERDTreeIgnore = ['^node_modules$']
+let g:rainbow_active = 1
+
+let g:lightline = {
+      \'colorscheme': 'wombat',
+      \'active': {
+      \   'left': [ [ 'mode', 'paste' ],
+      \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+      \ },
+      \ 'component_function': {
+      \   'gitbranch': 'gitbranch#name'
+      \ },
+      \ }
 
 " vim-prettier
 let g:prettier#quickfix_enabled = 1
@@ -76,7 +90,7 @@ set shiftwidth=2
 " always uses spaces instead of tab characters
 set expandtab
 
-colorscheme atom-dark
+colorscheme gruvbox
 let g:dracula_colorterm = 0
 set termguicolors
 
