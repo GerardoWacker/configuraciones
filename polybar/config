@@ -5,8 +5,6 @@ foreground = #c8bbb5
 color8 = #2d3347
 
 [bar/left]
-override-redirect = false
-wm-restack = bspwm
 bottom = false
 background = ${colors.background}
 foreground = ${colors.foreground}
@@ -19,14 +17,13 @@ line-color = #f00
 offset-y = 13
 offset-x = 13
 enable-ipc = true
+override-redirect = true
 
 font-0 = UbuntuMono Nerd Font:style=Bold:pixelsize=12;3
 
 modules-left = rofi bspwm
 
 [bar/right]
-override-redirect = false
-wm-restack = bspwm
 bottom = false
 background = ${colors.background}
 foreground = ${colors.foreground}
@@ -41,10 +38,9 @@ offset-x = 85.3%
 enable-ipc = true
 font-0 = UbuntuMono Nerd Font:style=Bold:pixelsize=12;3
 modules-right = network alsa battery time
+override-redirect = true
 
 [bar/center]
-override-redirect = true
-wm-restack = bspwm
 background = ${colors.background}
 foreground = ${colors.foreground}
 fixed-center = true
@@ -55,7 +51,9 @@ line-color = #f00
 offset-y = 13
 offset-x = 16.3%
 modules-center = title 
+enable-ipc = true
 font-0 = UbuntuMono Nerd Font:style=Bold:pixelsize=12;3
+override-redirect = true
 
 [bar/bar]
 override-redirect = false 
