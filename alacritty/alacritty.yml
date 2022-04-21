@@ -18,10 +18,11 @@ font:
     family: JetBrains Mono Nerd Font
     style: Bold Italic
 
-  size: 8
+  size: 10
 
 window:
+  dynamic_padding: true
   padding:
-    x: 10
-    y: 10
-  opacity: 0.8
+    x: 8
+    y: 8
+  opacity: 0.9
