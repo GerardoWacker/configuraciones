@@ -8,11 +8,11 @@ super + Return
 
 # program launcher
 super + space
-	~/.config/rofi/launchers/text/launcher.sh
+	~/.config/rofi/launchers/colorful/launcher.sh
 
-alt + Tab
+super + Tab
   ~/.config/rofi/launchers/text/window.sh
-
+  
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
@@ -44,6 +44,9 @@ super + g
 
 super + alt + {Left,Right}
   polybar-msg cmd {show,hide}
+
+alt + Tab
+  polybar-msg cmd toggle & xdo raise -N Polybar
 
 XF86AudioLowerVolume
         amixer set Master 10%-
@@ -94,10 +97,6 @@ super + {_,shift + }c
 # focus the next/previous desktop in the current monitor
 super + {Left,Right}
 	bspc desktop -f {prev,next}.local
-
-# focus the last node/desktop
-super + {grave,Tab}
-	bspc {node,desktop} -f last
 
 # focus the older or newer node in the focus history
 super + {o,i}

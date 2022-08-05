@@ -10,6 +10,7 @@ picom -b &
 nm-applet &
 dunst &
 sh ~/.config/polybar/launch.sh
+xdo raise -N Polybar
 
 # ] ---- WORKSPACES ---- [ 
 
