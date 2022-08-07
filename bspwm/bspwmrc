@@ -3,6 +3,7 @@
 # ] ---- AUTOSTART ---- [
 
 setxkbmap -option keypad:pointerkeys &
+xset r rate 200 25 &
 sxhkd &
 wmname LG3D &
 feh --bg-fill ~/Imágenes/Wall.png &
