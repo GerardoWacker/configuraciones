@@ -4,15 +4,14 @@ Boludeces que guardo de mi instalación de Arch por si llego a necesitarlas en u
 **NOTA:** No tomar como modelo. Muchas de las cosas presentes acá son experimentales.
 
 ## ¿Cómo se ve?
-Un ejemplo de como se ve.
+Un ejemplo de como se ve. La diferencia presente en ambas imágenes es la presencia de la barra de información.
 <img src="/como-se-ve-1.png" />
 <img src="/como-se-ve-2.png" />
 
 ## ¿Qué tiene?
 - Configuraciones de bspwm, como escritorios y esas cosas.
 - Configuraciones de sxhkd, como mis keybinds.
-- Cosas del polybar, desde modulos propios, hasta algunos robados.
-- Configuración del nvim (robado de un video de YT que no encuentro).
+- Cosas del polybar.
 - Configuración de alacritty (Simple, solo setea font y background opacity).
 - Configuración de Picom (un poco cambiado del default).
 - Configuración de Neofetch (agregar unos valores, sacar otros).
@@ -20,10 +19,14 @@ Un ejemplo de como se ve.
 ### ¿Qué fondo de pantalla estoy usando?
 Para que todas las correspondientes configuraciones y gamas de colores tengan sentido, es más que necesario tener un fondo de pantalla que combine.
 
-**Actualmente estoy usando**: [Dunes 2 Midnight Foggy](https://www.deviantart.com/dpcdpc11/art/DUNES-2-Wallpaper-5120x2880px-656488303), por dpcdpc11.
+**Actualmente estoy usando**: Fondo por defecto de macOS Ventura (beta), por Apple.
+
+### ¿Cómo funciona?
+Para alternar la barra de arriba a la derecha, presionar **Alt + Tab**.
 
 ### **NO** viene incluido
 - Fondo de pantalla (temas de copyright)
+- Configuración de Neovim (Uso [NvChad](https://github.com/NvChad/NvChad))
 
 ## Yo teniendo que hacer un backup de las boludeces que tengo en Arch:
 <img src="/cry in la concha de la lora.png" />
