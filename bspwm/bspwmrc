@@ -2,6 +2,7 @@
 
 # ] ---- AUTOSTART ---- [
 
+setxkbmap -option keypad:pointerkeys &
 sxhkd &
 wmname LG3D &
 feh --bg-fill ~/Imágenes/Wall.png &
@@ -9,7 +10,8 @@ flameshot &
 picom -b &
 nm-applet &
 dunst &
-sh ~/.config/polybar/launch.sh
+unclutter -idle 3 &
+sh ~/.config/polybar/launch.sh &
 xdo raise -N Polybar
 
 # ] ---- WORKSPACES ---- [ 
