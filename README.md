@@ -16,6 +16,7 @@ Un ejemplo de como se ve. La diferencia presente en ambas imágenes es la presen
 - Configuración de Picom (un poco cambiado del default).
 - Configuración de Neofetch (agregar unos valores, sacar otros).
 - Configuración de Spicetify (solo temas).
+- Configuración de zsh (oh-my-zsh).
 
 ### ¿Qué fondo de pantalla estoy usando?
 Para que todas las correspondientes configuraciones y gamas de colores tengan sentido, es más que necesario tener un fondo de pantalla que combine.
