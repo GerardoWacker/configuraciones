@@ -1,49 +1,66 @@
 colors:
-  # Default colors
   primary:
-    background: '0x2D2A2E'
-    foreground: '0xfff1f3'
-
-  # Normal colors
+    background: "0x000000"
+    foreground: "0xe0def4"
+  cursor:
+    text: "0xe0def4"
+    cursor: "0x524f67"
+  vi_mode_cursor:
+    text: "0xe0def4"
+    cursor: "0x524f67"
+  line_indicator:
+    foreground: None
+    background: None
+  selection:
+    text: "0xe0def4"
+    background: "0x403d52"
   normal:
-    black:   '0x2c2525'
-    red:     '0xfd6883'
-    green:   '0xadda78'
-    yellow:  '0xf9cc6c'
-    blue:    '0xf38d70'
-    magenta: '0xa8a9eb'
-    cyan:    '0x85dacc'
-    white:   '0xfff1f3'
-
-  # Bright colors
+    black: "0x26233a"
+    red: "0xeb6f92"
+    green: "0x31748f"
+    yellow: "0xf6c177"
+    blue: "0x9ccfd8"
+    magenta: "0xc4a7e7"
+    cyan: "0xebbcba"
+    white: "0xe0def4"
   bright:
-    black:   '0x72696a'
-    red:     '0xfd6883'
-    green:   '0xadda78'
-    yellow:  '0xf9cc6c'
-    blue:    '0xf38d70'
-    magenta: '0xa8a9eb'
-    cyan:    '0x85dacc'
-    white:   '0xfff1f3'
+    black: "0x6e6a86"
+    red: "0xeb6f92"
+    green: "0x31748f"
+    yellow: "0xf6c177"
+    blue: "0x9ccfd8"
+    magenta: "0xc4a7e7"
+    cyan: "0xebbcba"
+    white: "0xe0def4"
+  hints:
+    start:
+      foreground: "#908caa"
+      background: "#1f1d2e"
+    end:
+      foreground: "#6e6a86"
+      background: "#1f1d2e"
 font:
   normal:
-    family: JetBrains Mono Nerd Font
+    family: Liga SFMono Nerd Font
     style: Default
 
   bold:
-    family: JetBrains Mono Nerd Font
+    family: Liga SFMono Nerd Font
     style: Bold
 
   italic:
-    family: JetBrains Mono Nerd Font
+    family: Liga SFMono Nerd Font
     style: Italic
 
   bold_italic:
-    family: JetBrains Mono Nerd Font
+    family: Liga SFMono Nerd Font
     style: Bold Italic
 
   size: 9
 
 window:
   dynamic_padding: true
-  opacity: 0.87
+  padding:
+    x: 13
+    y: 13
+    #opacity: 0.87
