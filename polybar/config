@@ -1,25 +1,206 @@
 [colors]
-background = #CC111111
+background = #000000
 background-alt = #CC4e69a6
-foreground = #c8bbb5
+foreground = #ebbcba
 color8 = #2d3347
+
+[bar/date4info2]
+bottom = false
+background = ${colors.background}
+foreground = ${colors.foreground}
+fixed-center = true
+radius = 16
+line-size = 0
+line-color = #f00
+enable-ipc = true
+override-redirect = true
+font-0 = Liga SFMono Nerd Font:style=Bold:pixelsize=12;3
+modules-center = datetime
+offset-y = 13
+offset-x = 1687
+width = 220
+height = 32
+
+[module/datetime]
+type = internal/date
+time = %a, %d %h - %H:%M
+format = <label>
+format-prefix = ""
+format-prefix-padding = 1
+format-foreground = #ffffff
+format-padding = 2
+label = %time%
+label-foreground = #ffffff
+
+[bar/bat4info2]
+bottom = false
+background = ${colors.background}
+foreground = ${colors.foreground}
+fixed-center = true
+radius = 16
+line-size = 0
+line-color = #f00
+enable-ipc = true
+override-redirect = true
+font-0 = Liga SFMono Nerd Font:style=Bold:pixelsize=12;3
+modules-center = batmod4info2
+offset-y = 13
+offset-x = 1504
+width = 170
+height = 32
+
+[module/batmod4info2]
+type = internal/battery
+battery = BAT1
+adapter = AC
+full-at = 100%
+time-format = %Hh%Mm
+
+format-charging =   <label-charging>
+format-discharging = <ramp-capacity>  <label-discharging>
+format-full =   <label-full>
+label-charging = %percentage%% - %time%
+label-discharging = %percentage%% - %time%
+
+label-charging-foreground = #ffffff
+label-discharging-foreground = #ffffff
+label-full-foreground = #ffffff
+
+format-charging-foreground = #ffffff
+format-discharging-foreground = #ffffff
+format-full-foreground = #ffffff
+
+format-charging-padding = 1
+format-discharging-padding = 1
+format-full-padding = 1 
+
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
+ramp-capacity-3 = 
+ramp-capacity-4 = 
+
+[bar/vol4info2]
+bottom = false
+background = ${colors.background}
+foreground = ${colors.foreground}
+fixed-center = true
+radius = 16
+line-size = 0
+line-color = #f00
+enable-ipc = true
+override-redirect = true
+font-0 = Liga SFMono Nerd Font:style=Bold:pixelsize=12;3
+modules-center = alsa4info2
+offset-y = 13
+offset-x = 1401
+width = 90
+height = 32
+
+[module/alsa4info2]
+type = internal/alsa
+
+format-volume =   <label-volume>
+label-muted =  
+label-muted-padding = 1
+label-muted-foreground = #ffffff
+label-volume-foreground = #ffffff
+format-volume-foreground = #ffffff
+format-volume-padding = 1
+
+[bar/net4info2]
+bottom = false
+background = ${colors.background}
+foreground = ${colors.foreground}
+fixed-center = true
+radius = 16
+line-size = 0
+line-color = #f00
+enable-ipc = true
+override-redirect = false
+font-0 = Liga SFMono Nerd Font:style=Bold:pixelsize=12;3
+modules-center = netmod4info2
+offset-y = 13
+offset-x = 1328
+width = 60
+height = 32
+
+[module/netmod4info2]
+type = internal/network
+interface = wlp4s0
+interval = 3.0
+unknown-as-up = true
+accumulate-stats = true
+format-connected = 直
+format-disconnected = 睊
+label-connected = %essid%
+format-connected-padding = 2
+format-connected-foreground = #ffffff
+format-disconnected-foreground = #ffffff
+label-connected-foreground = #ffffff
+
+[bar/desk4info2]
+bottom = false
+background = #000000
+foreground = ${colors.foreground}
+fixed-center = true
+radius = 16
+line-size = 0
+line-color = #f00
+enable-ipc = true
+override-redirect = false
+font-0 = Liga SFMono Nerd Font:style=Bold:pixelsize=13;3
+modules-center = deskmod4info2
+offset-y = 13
+offset-x = 13
+width = 370
+height = 32
+
+[module/deskmod4info2]
+type = internal/xworkspaces
+pin-workspaces = true
+enable-click = true
+enable-scroll = true
+icon-0 = 1;
+icon-1 = 2;
+icon-2 = 3;
+icon-3 = 4;
+icon-4 = 5;
+icon-default = 
+format = <label-state>
+format-padding = 0
+format-background = #000000
+label-monitor = %name%
+label-active = 
+label-active-foreground = #ffffff
+label-occupied = 
+label-occupied-foreground = #fff
+label-urgent = 
+label-urgent-foreground = #fff
+label-empty = 
+label-empty-foreground = #fff
+
+label-active-padding = 2
+label-urgent-padding = 2
+label-occupied-padding = 2
+label-empty-padding = 2
 
 [bar/info]
 bottom = false
 background = ${colors.background}
 foreground = ${colors.foreground}
 fixed-center = true
-radius = 7
+radius = 15
 line-size = 0
 line-color = #f00
 enable-ipc = true
 override-redirect = true
-font-0 = JetBrains Mono Nerd Font:style=Plain:pixelsize=15;3
+font-0 = Liga SFMono Nerd Font:style=Plain:pixelsize=14;3
 modules-center = network alsa battery time
 offset-y = 13
-offset-x = 79.35%
-width = 20%
-height = 38
+offset-x = 1567
+width = 340
+height = 40
 
 [bar/desktops]
 bottom = false
@@ -31,13 +212,11 @@ height = 35
 radius = 7
 line-size = 0
 line-color = #f00
-offset-y = 60
-offset-x = 84.37%
+offset-y = 13
+offset-x = 13
 enable-ipc = true
 override-redirect = true
-
 font-0 = UbuntuMono Nerd Font:style=Bold:pixelsize=12;3
-
 modules-left = rofi bspwm
 
 [bar/left]
@@ -80,15 +259,18 @@ override-redirect = true
 background = ${colors.background}
 foreground = ${colors.foreground}
 fixed-center = true
-width = 68.4%
-height = 35
+width = 50%
+height = 40
+radius = 15
+border-size = 2
+border-color = #ebbcba
 line-size = 0
 line-color = #f00
 offset-y = 13
-offset-x = 16.3%
+offset-x = 13
 modules-center = title 
 enable-ipc = true
-font-0 = UbuntuMono Nerd Font:style=Bold:pixelsize=12;3
+font-0 = JetBrains Mono Nerd Font:style=Plain:pixelsize=10;3
 override-redirect = true
 
 [bar/bar]
@@ -161,7 +343,7 @@ format-foreground = #ffffff
 format-padding = 1
 format-prefix = " "
 format-prefix-padding = 1
-format-prefix-foreground = #bbbbbb
+format-prefix-foreground = #ebbcba
 tail = false
 interval = 3
 
@@ -172,7 +354,7 @@ format-foreground = #ffffff
 format-padding = 1
 format-prefix = "Br /"
 format-prefix-padding = 1
-format-prefix-foreground = "#bbbbbb"
+format-prefix-foreground = "#ebbcba"
 tail = false
 interval = 3
 
@@ -184,7 +366,7 @@ format-prefix = " "
 format-foreground = #ffffff
 format-padding = 1
 format-prefix-padding = 1
-format-prefix-foreground = #bbbbbb
+format-prefix-foreground = #ebbcba
 tail = false
 interval = 0
 click-left = playerctl play-pause
@@ -209,7 +391,7 @@ time = %H:%M
 format = <label>
 format-prefix = ""
 format-prefix-padding = 1
-format-foreground = #bbbbbb
+format-foreground = #ffffff
 format-padding = 2
 label = %time%
 label-foreground = #ffffff
@@ -230,9 +412,9 @@ label-charging-foreground = #ffffff
 label-discharging-foreground = #ffffff
 label-full-foreground = #ffffff
 
-format-charging-foreground = #bbbbbb
-format-discharging-foreground = #bbbbbb
-format-full-foreground = #bbbbbb
+format-charging-foreground = #ebbcba
+format-discharging-foreground = #ebbcba
+format-full-foreground = #ebbcba
 
 format-charging-padding = 2
 format-discharging-padding = 2
@@ -248,8 +430,8 @@ format-connected = 直
 format-disconnected = 睊
 label-connected = %essid%
 format-connected-padding = 2
-format-connected-foreground = #bbbbbb
-format-disconnected-foreground = #bbbbbb
+format-connected-foreground = #ebbcba
+format-disconnected-foreground = #ebbcba
 label-connected-foreground = #ffffff
 
 [module/alsa]
@@ -260,7 +442,7 @@ label-muted = 
 label-muted-padding = 2
 label-muted-foreground = #cccccc
 label-volume-foreground = #ffffff
-format-volume-foreground = #bbbbbb
+format-volume-foreground = #ebbcba
 format-volume-padding = 2
 
 [module/workspaces]
