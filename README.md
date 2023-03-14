@@ -5,8 +5,7 @@ Boludeces que guardo de mi instalación de Arch por si llego a necesitarlas en u
 
 ## ¿Cómo se ve?
 Un ejemplo de como se ve. La diferencia presente en ambas imágenes es la presencia de la barra de información.
-<img src="/como-se-ve-1.png" />
-<img src="/como-se-ve-2.png" />
+<img src="/como-se-ve.png" />
 
 ## ¿Qué tiene?
 - Configuraciones de bspwm, como escritorios y esas cosas.
@@ -21,7 +20,7 @@ Un ejemplo de como se ve. La diferencia presente en ambas imágenes es la presen
 ### ¿Qué fondo de pantalla estoy usando?
 Para que todas las correspondientes configuraciones y gamas de colores tengan sentido, es más que necesario tener un fondo de pantalla que combine.
 
-**Actualmente estoy usando**: Fondo por defecto de macOS Ventura (beta), por Apple.
+**Actualmente estoy usando**: Fondo por defecto de macOS Ventura, por Apple.
 
 ### ¿Cómo funciona?
 Para alternar la barra de arriba a la derecha, presionar **Alt + Tab**.
