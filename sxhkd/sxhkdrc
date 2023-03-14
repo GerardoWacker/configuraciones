@@ -52,8 +52,8 @@ super + y
 super + g
 	bspc node -s biggest.window
 
-alt + Tab
-  polybar-msg cmd toggle & xdo raise -N Polybar
+#alt + Tab
+#  polybar-msg cmd toggle & xdo raise -N Polybar
 
 XF86AudioLowerVolume
         amixer set Master 10%-
