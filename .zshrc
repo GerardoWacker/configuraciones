@@ -114,3 +114,4 @@ export PATH=$PATH:/home/gerar/.spicetify
 # lazygit alias.
 alias lg='lazygit'
 alias nv='nvim'
+alias yt='ytfzf'
