@@ -1,5 +1,5 @@
 [colors]
-background = #000000
+background = #171717
 background-alt = #CC4e69a6
 foreground = #ebbcba
 color8 = #2d3347
@@ -141,7 +141,7 @@ label-connected-foreground = #ffffff
 
 [bar/desk4info2]
 bottom = false
-background = #000000
+background = ${colors.background}
 foreground = ${colors.foreground}
 fixed-center = true
 radius = 16
@@ -169,7 +169,7 @@ icon-4 = 5;
 icon-default = 
 format = <label-state>
 format-padding = 0
-format-background = #000000
+format-background = ${colors.background}
 label-monitor = %name%
 label-active = 
 label-active-foreground = #ffffff
